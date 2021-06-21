@@ -1,0 +1,59 @@
+
+1 Сложение через функцию
+
+val a = 2
+val b = 3
+def plus (a: Int , b: Int): Int = {a + b}
+val plusResult = plus(2, 3)
+println(plusResult)
+
+2.1 Чёт-нечет через переменную
+
+var n = 3
+print ("n = "); println(n)
+if (n % 2 == 0){println ("n - чётное")}
+else {println ("n - нечётное")}
+
+
+2.2 чёт-нечет  через функцию 
+
+var n = 4
+def x (n: Int):Unit = {if (n % 2 == 0){println ("это чётное число"); print(n); print (" ")}
+else {println ("это нечётное число"); print(n); print (" ")}}
+var xResult = x(n)
+
+
+2.3 чёт-нечет с возвращением но без вывода
+var n = 7
+def x (n: Int):String = {if (n % 2 == 0) { s"$n это чётное число" }
+else { s"$n это нечётное число" }}
+var xResult = x(n)
+println (xResult)
+
+
+3. сумма массива через функцию
+
+val array = new Array[Int](10)
+println ("Таблица массива")
+array(0) = 1
+array(1) = 2
+array(2) = 3
+array(3) = 4
+array(4) = 5
+array(5) = 6
+array(6) = 7
+array(7) = 8
+array(8) = 9
+array(9) = 10
+println(array.mkString(", "))
+val x = 0
+val z = 0
+val arr = 0 
+def sumarr (arr: Array[Int]):Int = {while(z < array.length) {
+x = x + arr(z)
+z = z + 1
+  return x
+}}
+println("Сумма значений в ячейках массива")
+var sumarrResult = sumarr(arr)
+println(sumarr(_))
